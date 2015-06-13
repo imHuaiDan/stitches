@@ -3,7 +3,7 @@
     <li class="active"><a href="#spritesheet" data-toggle="tab">PNG</a></li>
     <li><a href="#stylesheet" data-toggle="tab"><%= stylesheetType.toUpperCase() %></a></li>
     <li><a href="#markup" data-toggle="tab">HTML</a></li>
-    <li><a href="#example" data-toggle="tab"><strong>Example</strong></a></li>
+    <li><a href="#example" data-toggle="tab"><strong>示例</strong></a></li>
 </ul>
 <div class="tab-content">
     <div class="tab-pane active" id="spritesheet">

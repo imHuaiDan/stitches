@@ -2,27 +2,24 @@
     <!-- .stitches-toolbar -->
     <div class="stitches-toolbar btn-toolbar">
         <div class="btn-group">
-            <a href="http://draeton.github.io/stitches/" class="btn btn-small btn-link">
-                <strong>Stitches</strong>
-            </a>
-            <button data-action="open" class="btn btn-small btn-info files" title="Open">
-                <i class="icon-folder-open icon-white"></i> <span class="hidden-phone">Open</span><input class="file" type="file" multiple="multiple">
+            <button data-action="open" class="btn btn-small btn-info files" title="添加图片素材">
+                <i class="icon-folder-open icon-white"></i> <span class="hidden-phone">添加</span><input class="file" type="file" multiple="multiple">
             </button>
-            <button data-action="settings" class="btn btn-small btn-info" title="Set layout, style prefix, padding, etc.">
-                <i class="icon-cog icon-white"></i> <span class="hidden-phone">Settings</span>
+            <button data-action="settings" class="btn btn-small btn-info" title="设置布局、样式前缀、间距...">
+                <i class="icon-cog icon-white"></i> <span class="hidden-phone">设置</span>
             </button>
-            <button data-action="clear" class="btn btn-small btn-info disabled" title="Clear sprites from the canvas">
-                <i class="icon-remove icon-white"></i> <span class="hidden-phone">Clear</span>
+            <button data-action="clear" class="btn btn-small btn-info disabled" title="清空所有图片">
+                <i class="icon-remove icon-white"></i> <span class="hidden-phone">清空</span>
             </button>
         </div>
         <div class="btn-group">
-            <button data-action="downloads" class="btn btn-small btn-success disabled" title="Get the generated sprite sheet and stylesheet">
-                <i class="icon-download-alt icon-white"></i> <span class="hidden-phone">Downloads</span>
+            <button data-action="downloads" class="btn btn-small btn-success disabled" title="下载拼合好的图片和样式">
+                <i class="icon-download-alt icon-white"></i> <span class="hidden-phone">下载</span>
             </button>
         </div>
         <div class="btn-group">
-            <button data-action="about" class="btn btn-small btn-info" title="About Stitches">
-                <i class="icon-info-sign icon-white"></i> <span class="hidden-phone">About</span>
+            <button data-action="about" class="btn btn-small btn-info" title="关于程序">
+                <i class="icon-info-sign icon-white"></i> <span class="hidden-phone">关于</span>
             </button>
         </div>
     </div>
@@ -53,44 +50,44 @@
             <!-- .stitches-settings -->
             <div class="stitches-palette stitches-settings fade">
                 <div class="stitches-palette-header">
-                    <button type="button" class="close" data-action="close" title="Close">&times;</button>
-                    <h4>Settings</h4>
+                    <button type="button" class="close" data-action="close" title="关于">&times;</button>
+                    <h4>设置</h4>
                 </div>
 
                 <div class="stitches-palette-body">
                     <ul class="nav nav-tabs">
-                        <li class="active"><a href="#general" data-toggle="tab">General</a></li>
-                        <li><a href="#import" data-toggle="tab">Import</a></li>
+                        <li class="active"><a href="#general" data-toggle="tab">通用</a></li>
+                        <li><a href="#import" data-toggle="tab">导入</a></li>
                     </ul>
                     <form class="form-horizontal">
                         <div class="tab-content">
                             <div class="tab-pane active" id="general">
                                 <div class="control-group hide">
-                                    <label class="control-label">Position</label>
+                                    <label class="control-label">位置</label>
                                     <div class="controls">
                                         <label class="checkbox">
-                                            <input name="position" type="checkbox" value="auto"/> Auto
+                                            <input name="position" type="checkbox" value="auto"/> 自动
                                         </label>
                                     </div>
                                 </div>
 
                                 <div class="control-group">
-                                    <label class="control-label">Layout</label>
+                                    <label class="control-label">布局</label>
                                     <div class="controls">
                                         <label class="radio inline">
-                                            <input name="layout" type="radio" value="compact"/> Compact
+                                            <input name="layout" type="radio" value="compact"/> 紧凑
                                         </label>
                                         <label class="radio inline">
-                                            <input name="layout" type="radio" value="vertical"/> Vertical
+                                            <input name="layout" type="radio" value="vertical"/> 排成一列
                                         </label>
                                         <label class="radio inline">
-                                            <input name="layout" type="radio" value="horizontal"/> Horizontal
+                                            <input name="layout" type="radio" value="horizontal"/> 排成一行
                                         </label>
                                     </div>
                                 </div>
 
                                 <div class="control-group">
-                                    <label class="control-label">CSS/LESS</label>
+                                    <label class="control-label">输出格式</label>
                                     <div class="controls">
                                         <label class="radio inline">
                                             <input name="stylesheet" type="radio" value="css"/> CSS
@@ -102,14 +99,14 @@
                                 </div>
 
                                 <div class="control-group">
-                                    <label class="control-label">Style prefix</label>
+                                    <label class="control-label">样式前缀</label>
                                     <div class="controls">
-                                        <input name="prefix" type="text" placeholder="Style class prefix&hellip;">
+                                        <input name="prefix" type="text" placeholder="样式前缀&hellip;">
                                     </div>
                                 </div>
 
                                 <div class="control-group">
-                                    <label class="control-label">Padding</label>
+                                    <label class="control-label">间距</label>
                                     <div class="controls">
                                         <div class="input-append">
                                             <input name="padding" type="number" min="0" required placeholder="Sprite padding&hellip;">
@@ -122,14 +119,14 @@
                                     <label class="control-label">Data URI</label>
                                     <div class="controls">
                                         <label class="checkbox">
-                                            <input name="uri" type="checkbox" value="true"/> Include encoded image in CSS
+                                            <input name="uri" type="checkbox" value="true"/> 在样式中包含编码后的图片
                                         </label>
                                     </div>
                                 </div>
                             </div>
                             <div class="tab-pane" id="import">
                                 <div class="control-group">
-                                    <label class="control-label">Paste import here</label>
+                                    <label class="control-label">根据样式导入图片</label>
                                     <div class="controls">
                                         <textarea name="import" rows="10"></textarea>
                                     </div>
@@ -142,11 +139,11 @@
                 <div class="stitches-palette-footer">
                     <div class="btn-toolbar">
                         <div class="btn-group">
-                            <a href="#" class="downloads-export btn btn-small btn-success" download="stitches"><i class="icon-download-alt icon-white"></i> Export</a>
+                            <a href="#" class="downloads-export btn btn-small btn-success" download="stitches"><i class="icon-download-alt icon-white"></i> 导入</a>
                         </div>
                         <div class="btn-group">
-                            <button class="btn btn-small btn-info" data-action="close" title="Save"><span>Save</span></button>
-                            <button class="btn btn-small btn-info" data-action="close" title="Close"><span>Close</span></button>
+                            <button class="btn btn-small btn-info" data-action="close" title="Save"><span>保存</span></button>
+                            <button class="btn btn-small btn-info" data-action="close" title="Close"><span>关闭</span></button>
                         </div>
                     </div>
                 </div>
@@ -156,21 +153,21 @@
             <!-- .stitches-properties -->
             <div class="stitches-palette stitches-properties fade">
                 <div class="stitches-palette-header">
-                    <button type="button" class="close" data-action="close" title="Close">&times;</button>
-                    <h4>Sprite Properties</h4>
+                    <button type="button" class="close" data-action="close" title="关闭">&times;</button>
+                    <h4>图片属性</h4>
                 </div>
 
                 <div class="stitches-palette-body">
                     <form class="form-horizontal">
                         <div class="control-group">
-                            <label class="control-label">Name</label>
+                            <label class="control-label">名称</label>
                             <div class="controls">
-                                <input name="name" type="text" required placeholder="Sprite name&hellip;">
+                                <input name="name" type="text" required placeholder="图片名称&hellip;">
                             </div>
                         </div>
 
                         <div class="control-group">
-                            <label class="control-label">Coordinates (x, y)</label>
+                            <label class="control-label">坐标 (x, y)</label>
                             <div class="controls">
                                 <div class="input-append">
                                     <input name="x" required disabled placeholder="From left&hellip;" class="input-mini">
@@ -188,9 +185,9 @@
                 <div class="stitches-palette-footer">
                     <div class="btn-toolbar">
                         <div class="btn-group">
-                            <button class="btn btn-small btn-danger" data-action="remove" title="Delete"><span>Delete</span></button>
-                            <button class="btn btn-small btn-info" data-action="close" title="Save"><span>Save</span></button>
-                            <button class="btn btn-small btn-info" data-action="close" title="Close"><span>Close</span></button>
+                            <button class="btn btn-small btn-danger" data-action="remove" title="Delete"><span>删除</span></button>
+                            <button class="btn btn-small btn-info" data-action="close" title="Save"><span>保存</span></button>
+                            <button class="btn btn-small btn-info" data-action="close" title="Close"><span>关闭</span></button>
                         </div>
                     </div>
                 </div>
@@ -200,8 +197,8 @@
             <!-- .stitches-about -->
             <div class="stitches-palette stitches-about fade in">
                 <div class="stitches-palette-header">
-                    <button type="button" class="close" data-action="close" title="Close">&times;</button>
-                    <h4>About Stitches</h4>
+                    <button type="button" class="close" data-action="close" title="关闭">&times;</button>
+                    <h4>工具介绍</h4>
                 </div>
 
                 <div class="stitches-palette-body">
@@ -218,7 +215,7 @@
                 <div class="stitches-palette-footer">
                     <div class="btn-toolbar">
                         <div class="btn-group">
-                            <button class="btn btn-small btn-info" data-action="close" title="Close"><span>Close</span></button>
+                            <button class="btn btn-small btn-info" data-action="close" title="Close"><span>关闭</span></button>
                         </div>
                     </div>
                 </div>
@@ -228,8 +225,8 @@
             <!-- .stitches-downloads -->
             <div class="stitches-palette stitches-downloads fade">
                 <div class="stitches-palette-header">
-                    <button type="button" class="close" data-action="close" title="Close">&times;</button>
-                    <h4>Downloads</h4>
+                    <button type="button" class="close" data-action="close" title="关闭">&times;</button>
+                    <h4>下载</h4>
                 </div>
 
                 <div class="stitches-palette-body">
@@ -239,9 +236,9 @@
                 <div class="stitches-palette-footer">
                     <div class="btn-toolbar">
                         <div class="btn-group">
-                            <a href="#" class="downloads-spritesheet btn btn-small btn-success" download="spritesheet"><i class="icon-download-alt icon-white"></i> Spritesheet</a>
-                            <a href="#" class="downloads-stylesheet btn btn-small btn-success" download="stylesheet"><i class="icon-download-alt icon-white"></i> Stylesheet</a>
-                            <button class="btn btn-small btn-info" data-action="close" title="Close"><span>Close</span></button>
+                            <a href="#" class="downloads-spritesheet btn btn-small btn-success" download="spritesheet"><i class="icon-download-alt icon-white"></i> 拼合图片</a>
+                            <a href="#" class="downloads-stylesheet btn btn-small btn-success" download="stylesheet"><i class="icon-download-alt icon-white"></i> 样式表</a>
+                            <button class="btn btn-small btn-info" data-action="close" title="关闭"><span>关闭</span></button>
                         </div>
                     </div>
                 </div>
